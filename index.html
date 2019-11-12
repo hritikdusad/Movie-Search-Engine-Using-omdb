@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Movie Search</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+  <div class="main-header">
+    <div class="inner">
+      <h1 class="main-title"><a href="index.html" class="ref">MovieSearch</a></h1>
+      <form class="search-form">
+        <label class="is-hidden" for="search">Search a title</label>
+        <input type="search" name="search" id="movies" placeholder="Search a Title...">
+        <button type="button" id="submit" class="search-button" onclick="myFunction()"><i class="material-icons icn-search">search</i></button>
+      </form>
+    </div>
+  </div>
+
+  <div class="main-content clearfix">
+    <ul id="root" class="movie-list">
+
+    <!-- ===============================================================
+      1- Example HTML which is created using javascript.
+         Each result should generate a '<li>'.
+         =============================================================== -->
+
+        <!--
+          <li>
+            <div class="poster-wrap">
+              <img class="movie-poster" src="http://ia.media-imdb.com/images/M/MV5BMTYwNjAyODIyMF5BMl5BanBnXkFtZTYwNDMwMDk2._V1_SX300.jpg">
+            </div>
+            <span class="movie-title">Batman</span>
+            <span class="movie-year">1989</span>
+          </li>
+        -->
+
+
+    <!-- ================================================================
+      2- Display this placeholder icon if movie returns no movie poster.
+         This icon will replace '<img class="movie-poster" src="">'.
+         ================================================================ -->
+
+        <!-- <i class="material-icons poster-placeholder">crop_original</i> -->
+
+
+    <!-- ============================================================
+      3-  this <li> if the search form returns no movie data
+         ============================================================ -->
+
+        <!--
+          <li class='no-movies'>
+            <i class='material-icons icon-help'>help_outline</i>No movies found that match: [search form value].
+          </li>
+        -->
+
+    </ul>
+    <!-- Used for pagination -->
+    <div id="page">
+    </div>
+  </div>
+  <script src="js/action.js" type="text/javascript"></script>
+</body>
+</html>
